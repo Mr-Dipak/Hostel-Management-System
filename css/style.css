@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Landing Page Styles */
+.landing-container {
+    padding: 50px 20px;
+}
+
+.landing-container header {
+    margin-bottom: 50px;
+}
+
+.landing-container h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.landing-container h2 {
+    color: #34495e;
+    font-size: 1.8em;
+}
+
+.user-card {
+    padding: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+}
+
+.student-card {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.admin-card {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.user-card h3 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Login/Register Form Styles */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.form-label {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+} 

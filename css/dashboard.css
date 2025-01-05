@@ -1,0 +1,228 @@
+/* Sidebar Styles */
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: linear-gradient(180deg, #2c3e50 0%, #3498db 100%);
+    color: #fff;
+    transition: all 0.3s;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 25px 20px;
+    background: rgba(0,0,0,0.2);
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#sidebar .sidebar-header h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+#sidebar .sidebar-header p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li {
+    margin: 5px 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#sidebar ul li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-radius: 8px;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+    font-size: 1.2em;
+    width: 25px;
+    text-align: center;
+}
+
+#sidebar ul li a:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateX(5px);
+}
+
+#sidebar ul li.active > a {
+    background: rgba(255,255,255,0.2);
+    border-left: 4px solid #fff;
+    font-weight: 600;
+}
+
+/* Content Styles */
+#content {
+    width: 100%;
+    min-height: 100vh;
+    margin-left: 250px;
+    transition: all 0.3s;
+    background-color: #f8f9fa;
+}
+
+/* Stats Cards */
+.stat-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.stat-card.bg-success {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    opacity: 0.8;
+    margin-left: 15px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Navigation */
+.navbar {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 0;
+    background: #fff !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .btn-dark {
+    background-color: #2c3e50;
+    border: none;
+}
+
+.navbar-text {
+    color: #2c3e50 !important;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+/* Modal */
+.modal-content {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+        box-shadow: none;
+    }
+    #sidebar.active {
+        margin-left: 0;
+        box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+    }
+    #content {
+        margin-left: 0;
+    }
+    #content.active {
+        margin-left: 250px;
+    }
+    .container-fluid {
+        padding: 15px;
+    }
+}
+
+/* Additional Styles for Better Visual Appeal */
+#sidebar ul li a:hover i {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.stat-card .card-body {
+    padding: 25px;
+}
+
+.stat-card h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.stat-card h6 {
+    font-size: 1rem;
+    opacity: 0.9;
+} 
